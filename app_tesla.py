@@ -9,17 +9,25 @@ SEED = 42  # any fixed number
 
 np.random.seed(SEED)
 os.environ["PYTHONHASHSEED"] = str(SEED)
-
-# ==========================
-# Streamlit Page Config
-# ==========================
 st.set_page_config(
     page_title="Tesla Sales Forecast Dashboard",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-st.title("Tesla Monthly Sales Forecast Dashboard")
+# ----- Right-aligned logo above the title -----
+logo_path = "tesla.png"   # must be in the same folder as your script
+
+logo_col, empty = st.columns([4, 1])   # adjust ratio to move logo further right
+with empty:
+    st.image(logo_path, width=180)
+# ----------------------------------------------
+st.title("Tesla Sales Forecast Dashboard")
+
+
+
+
+
 st.markdown(
     """
 The dashboard consists of three key components.
