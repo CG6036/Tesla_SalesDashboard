@@ -34,7 +34,7 @@ The dashboard consists of three key components.
 
 **First**, it provides a machine-learning–based sales prediction that helps the sales team better understand expected sales for the upcoming month. Using this forecast, the dashboard also estimates Tesla’s projected market share.
 
-**Second**, it compares the model’s predicted values with alternative projection scenarios, including CAGR-based forecasts and estimates from public media sources. This comparison helps assess uncertainty and reduce the risks associated with relying on a single prediction.
+**Second**, it compares the model prediction result with alternative projection scenarios, including monthly run rate projection and YTD Annualized projection. This comparison with traditional projection methods helps assess uncertainty and reduce the risks associated with relying on a single prediction.
 
 **Third**, the dashboard highlights potential issues that may have influenced Tesla’s sales in the previous month and identifies the top five rising keywords during that period. These insights offer additional context and help anticipate factors that may affect sales performance in the following month.
 """
@@ -681,3 +681,4 @@ st.markdown("""
 
 - Google Trends analysis for this month shows rising interest in keywords related to the **recent Tesla accident in Daejeon**. Such issue-driven sentiment may affect Tesla’s **Q4 performance**, suggesting the need for a **more conservative sales estimate**.
 """)
+
